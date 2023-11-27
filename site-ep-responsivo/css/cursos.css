@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+.carousel-item{
+    height: 80vh;
+}
+
+.carousel-inner{
+    width: 100%;
+    height: 80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.espaco{
+    height: 80vh;
+}
+
+section:nth-of-type(1){
+    background-image: url(../components/image/luffy-site.jpg);
+    width: 100%;
+    height: 80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section:nth-of-type(2){
+    background-image: url(../components/image/nami-site.jpg);
+    width: 100%;
+    height: 80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section:nth-of-type(3){
+    background-image: url(../components/image/chopper-site.jpg);
+    width: 100%;
+    height: 80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*//*/
+
+.container-conteudo{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    align-items: center;
+}
+
+.container-mae{
+    width: 1500px;
+    height: 494px;
+    max-height: 900px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: linear-gradient(#F6F9FF);
+    box-shadow: 20px 20px 50px -30px #dce1ff;
+}
+
+.container-mae2{
+    width: 1500px;
+    height: 494px;
+    max-height: 900px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    background: linear-gradient(#F6F9FF);
+    box-shadow: 20px 20px 50px -30px #dce1ff;
+}
+
+.imagem-estudante img{
+    width: 500px;
+    border-radius: 15px;
+    margin-right: 100px;
+    margin-left: 50px;
+}
+
+.conteudo-principal .titulo-principal{
+    font-size: 20px;
+    padding: 0;
+    font-size: 1.5em;
+    color: rgb(54, 54, 54);
+}
+
+.conteudo-principal .paragrafo{
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+@media (max-width:1000px){
+    nav{
+        display: none;
+    }
+    
+    .menu-certo{
+        width: 40px;
+        height: 30px;
+        margin-right: 20px;
+    }
+
+    .one,
+    .two,
+    .three {
+        background-color: black;
+        height: 5px;
+        width: 100%;
+        margin: 6px auto;
+
+        transition-duration: 0.4s;
+    }
+
+    .menu.on{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #62b150;
+        z-index: 10;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu.on nav{
+        display: block;
+    }
+
+    .menu.on .menu-certo{
+        position: absolute;
+        right: 0;
+        top: 30px;
+        margin-right: 45px;
+    }
+
+    .menu.on .menu-certo .one{
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+
+    .menu.on .menu-certo .two{
+        opacity: 0;
+    }
+
+    .menu.on .menu-certo .three{
+        transform: rotate(-45deg) translate(8px, -9px);
+    }
+
+    .menu.on nav ul{
+        text-align: center;
+        display: block;
+        margin-right: 0px;
+    }
+
+    .menu.on nav ul li {
+        transition-duration: 0.5s;
+        font-size: 2rem;
+        line-height: 4rem;
+        margin-bottom: 100px;
+    }
+
+    .menu.on nav ul li a{
+        font-size: 2rem;
+    }
+}
+
+

@@ -1,0 +1,567 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+
+header:nth-of-type(1){
+    background-image: url(../components/image/escola-frente-escuro.jpg);
+    height: 60vh;
+    background-size: cover;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 3%;
+    height: 80vh;
+}
+
+header{
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+header .container .logo:hover{
+    cursor: pointer;
+}
+
+header .container a .logo {
+    margin-left: 100px;
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul{
+    margin-right: 100px;
+    margin-top: 10px;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+nav ul li{
+    padding: 0 30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    font-family: poppins;
+    transition: 0.3s;
+}
+
+nav ul li a:hover{
+    color: #75bf65;
+    transition: 0.3s;
+}
+
+.main{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: center;
+    text-align: center;
+}
+
+.text-box{
+    width: 80%;
+    margin-top: 100px;
+}
+
+.text-box h2{
+    color: #00c1a1;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.text-box h1{
+    color: #FFF;
+    font-size: 46px;
+    font-weight: 600;
+}
+
+.text-box p{
+    margin-top: 23px;
+    color: #FFF;
+    font-size: 25px;
+    line-height: 1.5em;
+    text-align: justify;
+    text-align: center;
+}
+
+.bt-main-contact{
+    margin-top: 20px;
+    color: #FFF;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 5px;
+    background: #75bf65;
+    border: 1px solid #75bf65;
+    width: 141px;
+    height: 34px;
+    transition: 0.4s;
+}
+
+.bt-main-contact:hover{
+    cursor: pointer;
+    background: transparent;
+    transition: 0.4s;
+}
+
+.bt-main-learn{
+    border-radius: 5px;
+    border: 1px solid #FFF;
+    background-color: transparent;
+    width: 141px;
+    height: 34px;
+    color: #FFF;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    transition: 0.4s;
+}
+
+.bt-main-learn:hover{
+    cursor: pointer;
+    background: #75bf65;
+    transition: 0.4s;
+}
+
+/*/Cards/*/
+
+.caixa-container {
+    background: #F6F9FF;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #434343;
+}
+
+main.cards{
+    display: flex;
+    padding: 32px;
+    
+}
+
+main.cards section.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: white;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    max-height: 300px;
+    margin-left: 32px;
+}
+
+main.cards section.card:first-child{
+    margin-left: 0;
+}
+
+main.cards section.card .icon{
+    width: 64px;
+    height: 64px;
+}
+
+main.cards section.card img{
+    width: 100%;
+}
+
+main.cards section.card h3{
+    font-size: 100%;
+    margin: 16px 0;
+}
+
+main.cards section.card span{
+    font-weight: 300;
+    max-width: 350px;
+    font-size: 80%;
+    margin-bottom: 16px;
+}
+
+main.cards section.card .botao-cards{
+    padding: 0.5rem 1rem;   /*/unidade de medida para tamanho/*/
+    text-transform: uppercase;  /*/colocar maiusculo/*/
+    border-radius: 32px;
+    border: 0;
+    cursor: pointer;
+    font-size: 80%;
+    font-weight: 500;   /*/"peso da fonte" tipo negrito/*/
+    color: white;
+}
+
+main.cards section.card.visao .botao-cards{
+    background: linear-gradient(to right, #687EFF, #73fff6);
+}
+
+main.cards section.card.cursos .botao-cards{
+    background: linear-gradient(to right, #FF5B22, #FFCD4B);
+}
+
+main.cards section.card.eventos .botao-cards{
+    background: linear-gradient(to right, #FE5F89, #6567ff);
+}
+
+main.cards section.card.visao{
+    box-shadow: 20px 20px 50px -30px #9eabf7;
+}
+
+main.cards section.card.cursos{
+    box-shadow: 20px 20px 50px -30px #fcc63f;
+}
+
+main.cards section.card.eventos{
+    box-shadow: 20px 20px 50px -30px #fc7c51;
+}
+
+.container-conteudo{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    align-items: center;
+}
+
+.container-conteudo2{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    align-items: center;
+}
+
+.container-mae{
+    width: 1500px;
+    height: 494px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: linear-gradient(#F6F9FF);
+    box-shadow: 20px 20px 50px -30px #dce1ff;
+}
+
+.container-mae2{
+    width: 1500px;
+    height: 494px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    background: linear-gradient(#F6F9FF);
+    box-shadow: 20px 20px 50px -30px #dce1ff;
+}
+
+.container-mae .imagem-estudante img{
+    height: 500px;
+    border-radius: 15px;
+    margin-right: 100px;
+    margin-left: 50px;
+}
+
+.container-mae2 .imagem-estudante img{
+    width: 650px;
+    border-radius: 15px;
+    margin-left: 80px;
+    margin-right: 30px;
+}
+
+.conteudo-principal .titulo-principal{
+    font-size: 20px;
+    padding: 0;
+    font-size: 1.5em;
+    color: rgb(54, 54, 54);
+}
+
+.conteudo-principal .paragrafo{
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+.image-fundo-pos-main{
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    filter: blur(0px); /*/desfoque/*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-fundo-pos-main:nth-of-type(1){
+    background-image: url(../components/image/img-paralax.jpg);
+    height: 40vh; 
+}
+
+.image-fundo-pos-main h3{
+    color: white;
+    font-size: 46px;
+}
+
+.image-fundo-pos-main p{
+    color: white;
+    text-align: center;
+}
+/*/COMENTARIOS/*/
+.caixa-comentarios{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.comentarios-mae{
+    width: 70%;
+    height: 60%;
+}
+
+.comentarios-mae h2{
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.comentarios-mae p{
+    margin-bottom: 50px;
+}
+
+.comentarios{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+}
+
+.comentarim{
+    background-color: #e0e0e0;
+    width: 400px;
+    height: 200px;
+    margin-right: 50px;
+    border-radius: 25px 25px 25px 0px;
+}
+
+.comentarim p{
+    padding: 20px;
+}
+
+.caixa-foto{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.foto-comentario{
+    border-radius: 50%;
+    height: 64px;
+    width: 64px;
+    margin-right: 10px;
+}
+
+.foto-comentario img{
+    border-radius: 50%;
+    height: 64px;
+    width: 64px;
+}
+
+.cardsss{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.coordenacao .card-item{
+    background-color: rgb(245, 247, 255);
+    margin: 15px;
+    border-radius: 14px;
+    text-align: center;
+    width: 300px;
+    transition: 0.3s;
+    margin-left: 50px;
+}
+
+.coordenacao .card-item:first-child{
+    margin-left: 0px;
+}
+
+.coordenacao .card-item img{
+    border-radius: 100%;
+    width:200px;
+    display: block;
+    margin: 10px auto;
+    transition: 0.5s;
+}
+.coordenacao .card-item .nome-coord{
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+.coordenacao .card-item .funcao-coord{
+    font-size: 15px;
+    padding: 0 15px;
+    transition: 0.3s;
+}
+
+.coordenacao .card-item:hover{
+    transition: 0.5s;
+    margin-top: -1%;
+}
+
+/*/FOOTER/*/
+
+:root {
+    --color-neutral-0: #0e0c0c;
+    --color-neutral-10: #171717;
+    --color-neutral-30: #a8a29e;
+    --color-neutral-40: #f5f5f5;
+
+}
+
+footer {
+    width: 100%;
+    color: var(--color-neutral-40);
+}
+
+.footer-link {
+    text-decoration: none;
+}
+
+#footer_content {
+    background-color: var(--color-neutral-10);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 3.5rem;
+}
+
+#footer_contacts h1 {
+    margin-bottom: 0.75rem;
+}
+
+#footer_social_media {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+} 
+
+#footer_social_media .footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--color-neutral-40);
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+#footer_social_media .footer-link i {
+    font-size: 1.25rem;    
+}
+
+#footer_social_media .footer-link:hover {
+    opacity: 0.8;
+}
+
+#instagram {
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#facebook {
+    background-color: #4267b3;
+}
+
+#whatsapp {
+    background-color: #25d366;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+.footer-list .footer-link {
+    color: var(--color-neutral-30);
+    transition: all 0.4s;
+}
+
+.footer-list .footer-link:hover {
+    color: #75bf65;
+}
+
+#footer_subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#footer_subscribe p {
+    color: var(--color-neutral-30);
+}
+
+#input_group {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-neutral-0);
+    border-radius: 4px;
+}
+
+#input_group input {
+    all: unset;
+    padding: 0.75rem;
+    width: 100%;
+}
+
+#input_group button {
+    background-color: #75bf65;
+    border: none;
+    color: var(--color-neutral-40);
+    padding: 0px 1.25rem;
+    font-size: 1.125rem;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+#input_group button:hover {
+    opacity: 0.8;
+}
+
+#footer_copyright {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-neutral-0);
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+}
